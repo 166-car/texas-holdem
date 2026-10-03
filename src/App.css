@@ -1,0 +1,12 @@
+/* 德州扑克牌桌与扑克牌样式 */
+
+.table-felt {
+  background: radial-gradient(ellipse at center, #357a52 0%, #245c3b 55%, #16402a 100%);
+}
+
+.card-back {
+  background-color: #1e3a8a;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.08) 0 2px, transparent 2px 6px),
+    repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.08) 0 2px, transparent 2px 6px);
+}
