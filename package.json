@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "server": "esbuild server/index.ts --bundle --platform=node --format=esm --external:ws --outfile=node-dist/server.mjs && node node-dist/server.mjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -48,13 +49,14 @@
     "react": "^19.2.0",
     "react-day-picker": "^9.13.0",
     "react-dom": "^19.2.0",
-    "react-router": "^7.6.1",
     "react-hook-form": "^7.70.0",
     "react-resizable-panels": "^4.2.2",
+    "react-router": "^7.6.1",
     "recharts": "^2.15.4",
     "sonner": "^2.0.7",
     "tailwind-merge": "^3.4.0",
     "vaul": "^1.1.2",
+    "ws": "^8.22.0",
     "zod": "^4.3.5"
   },
   "devDependencies": {
